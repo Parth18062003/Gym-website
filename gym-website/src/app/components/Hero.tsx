@@ -16,7 +16,7 @@ const Hero = () => {
         />
       </div>
       <div className="flex items-center">
-        <div className="md:absolute md:bottom-5 md:left-5 bg-white rounded-full px-3 py-1">
+        <div className="md:absolute md:bottom-5 md:left-5 bg-white rounded-full px-3 py-1 shadow-md">
           <div className="flex items-center">
             <Image src={sub} alt="subscribe" height={36} width={36} />
             <span className="ml-2">100+ new users enrolled</span>
