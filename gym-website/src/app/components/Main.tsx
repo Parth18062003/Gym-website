@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import curl from "../../../assets/curl.png";
+import leftPointer from "../../../assets/left-pointer.svg";
+import rightPointer from "../../../assets/right-pointer.svg";
 
 const Main = () => {
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen">
+    <div className="flex flex-col items-center justify-start min-h-screen overflow-hidden">
       <div className="mt-4">
         <h1 className="text-5xl font-semibold text-center text-[#233470]">
           Barbell Bicep Curl
@@ -18,6 +20,9 @@ const Main = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="flex flex-col items-center ">
           <h3 className="mt-6 md:mt-12 text-lg text-[#100D81] font-semibold md:-translate-x-12">Bicep Development</h3>
+          <div className="hidden md:block mx-80 w-[65rem] mb-[-3rem] translate-x-96">
+            <Image src={rightPointer} alt="pointer" />
+          </div>
           <div className="mx-6 md:mx-28">
             <p>
               The barbell bicep curl specifically targets the biceps brachii,
@@ -25,6 +30,9 @@ const Main = () => {
             </p>
           </div>
           <h3 className="mt-6 md:mt-12 text-lg text-[#100D81] font-semibold md:-translate-x-14">Strength Building</h3>
+          <div className="hidden md:block mx-80 w-[65rem] mb-[-3rem] translate-x-96">
+            <Image src={rightPointer} alt="pointer" />
+          </div>
           <div className="mx-6 md:mx-28">
             <p>
               The exercise allows for heavy resistance, promoting strength
@@ -32,18 +40,21 @@ const Main = () => {
             </p>
           </div>
         </div>
-        <div className="relative md:mt-8 w-[20rem] md:w-[20rem] h-[20rem] mx-auto">
+        <div className="relative md:mt-16 w-[20rem] md:w-[25rem] h-[20rem] md:h-[25rem] mx-auto">
           {/* Circle background */}
           <div className="absolute inset-0 rounded-full bg-[#19307E] opacity-80"></div>
 
           {/* Image */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[28rem]">
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[28rem] md:w-[35rem]">
             <Image src={curl} alt="curl" width={1200} height={1200} />
           </div>
         </div>
         <div className="flex flex-col items-center">
           <h3 className="mt-6 md:mt-12 text-lg text-[#100D81] font-semibold md:translate-x-4">Increased Muscle Engagement</h3>
-          <div className="mx-6 md:mx-24 md:text-right">
+          <div className="hidden md:block mx-80 w-[65rem] mb-[-4rem] translate-x-64">
+            <Image src={leftPointer} alt="pointer" />
+          </div>
+          <div className="mx-6 md:mx-20 md:text-right">
             <p>
               By maintaining strict form and controlling the weight, you ensure
               that the biceps are doing the majority of the work, leading to
@@ -51,7 +62,10 @@ const Main = () => {
             </p>
           </div>
           <h3 className="mt-6 md:mt-12 text-lg text-[#100D81] font-semibold md:translate-x-12">Compound Movement</h3>
-          <div className="mx-6 md:mx-24 md:text-right">
+          <div className="hidden md:block mx-80 w-[65rem] mb-[-4rem] translate-x-64">
+            <Image src={leftPointer} alt="pointer" />
+          </div>
+          <div className="mx-6 md:mx-20 md:text-right">
             <p>
               While primarily an isolation exercise for the biceps, the barbell
               curl involves other muscles to a lesser extent, such as the

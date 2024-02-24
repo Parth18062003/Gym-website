@@ -78,16 +78,16 @@ const Header = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            } p-6 bg-[#051342] absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-sans font-medium cursor-pointer text-[28px] ${
+                  className={`font-sans font-medium cursor-pointer text-[24px] ${
                     active === nav.title
                       ? "text-[#FDF8ED]"
-                      : "text-text-[#c7c7c7]"
+                      : "text-[#c7c7c7]"
                   } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => setActive(nav.title)}
                 >
