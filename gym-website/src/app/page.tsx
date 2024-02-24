@@ -1,3 +1,4 @@
+import About from "./components/About/About";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Main from "./components/Main";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Main />
       <Info />
+      <About />
     </>
   );
 }
